@@ -6,9 +6,16 @@ public class FlaskController : MonoBehaviour
 {
     [SerializeField] private GameObject flaskexplode;
     // Start is called before the first frame update
-    void OnTriggerEnter()
+
+    private void OnCollisionEnter(Collision collision)
     {
-        Instantiate()
+    GameObject hitObject = collision.gameObject;
+    Quaternion rotatedQuaternion = Quaternion.AngleAxis(90, Vector3.right) * hitObject.transform.rotation;
+    if (hitObject.CompareTag("Flask")) 
+    {
+        hitObject.SetActive(false);
+        Instantiate(flaskexplode, hitObject.transform.position, rotatedQuaternion);
     }
+}
 
 }
