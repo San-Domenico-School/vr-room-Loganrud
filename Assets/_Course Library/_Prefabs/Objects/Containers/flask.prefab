@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8852088811525837876}
   m_Layer: 0
   m_Name: flask
-  m_TagString: Untagged
+  m_TagString: Flask
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3846018093981099296, guid: b485805da1691421eb4b1bb0bd08e472, type: 3}
+  - {fileID: 2100000, guid: b4d6302e31e55472d96a0cbb775a6314, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
